@@ -18,28 +18,28 @@ string[,] table = new string[2, 5];
 
 // классический пример с матрицей
 
-void PrintArray(int[,] matr)
-{
-    for (int i = 0; i < matr.GetLength(0); i++) //matrix.GetLength(0) = 3 т.к int[,] matrix = new int[3, 4];
-    {
-        for (int j = 0; j < matr.GetLength(1); j++) //matrix.GetLength(1) = 4 т.к int[,] matrix = new int[3, 4];
-        {
-            Console.Write($"{matr[i, j]} ");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintArray(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++) //matrix.GetLength(0) = 3 т.к int[,] matrix = new int[3, 4];
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++) //matrix.GetLength(1) = 4 т.к int[,] matrix = new int[3, 4];
+//         {
+//             Console.Write($"{matr[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
-void FillArray(int[,] matr)
-{
-    for (int i = 0; i < matr.GetLength(0); i++)
-    {
-        for (int j = 0; j < matr.GetLength(1); j++)
-        {
-            matr[i, j] = new Random().Next(1, 10); // [1; 10)
-        }
-    }
-}
+// void FillArray(int[,] matr)
+// {
+//     for (int i = 0; i < matr.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matr.GetLength(1); j++)
+//         {
+//             matr[i, j] = new Random().Next(1, 10); // [1; 10)
+//         }
+//     }
+// }
 int[,] matrix = new int[3, 4];
 // PrintArray(matrix);
 // FillArray(matrix);
@@ -74,19 +74,19 @@ int[,] pic = new int[,]
  {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 };
 
-void PrintImage(int[,] image)
-{
-    for (int i = 0; i < image.GetLength(0); i++) //matrix.GetLength(0) = 3 т.к int[,] matrix = new int[3, 4];
-    {
-        for (int j = 0; j < image.GetLength(1); j++) //matrix.GetLength(1) = 4 т.к int[,] matrix = new int[3, 4];
-        {
-            //Console.Write($"{matr[i, j]} ");
-            if (image[i, j] == 0) Console.Write($" ");
-            else Console.Write($"+");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintImage(int[,] image)
+// {
+//     for (int i = 0; i < image.GetLength(0); i++) //matrix.GetLength(0) = 3 т.к int[,] matrix = new int[3, 4];
+//     {
+//         for (int j = 0; j < image.GetLength(1); j++) //matrix.GetLength(1) = 4 т.к int[,] matrix = new int[3, 4];
+//         {
+//             //Console.Write($"{matr[i, j]} ");
+//             if (image[i, j] == 0) Console.Write($" ");
+//             else Console.Write($"+");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 // функция закрашивания "лайка"
 void FillImage(int row, int col)
 {
