@@ -2,7 +2,7 @@
 // int a = 12;
 using System.Linq;
 
-var a = 12; //сам определил тип данных через var
+// var a = 12; //сам определил тип данных через var
 // Console.WriteLine(a.GetType());
 
 var data = new int[] { 1, 2, 3, 4 }
